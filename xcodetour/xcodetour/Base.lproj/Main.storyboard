@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="xcodetour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="pJp-pA-NMn">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20R-1d-7ex">
+                                <rect key="frame" x="139" y="556" width="97" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="3wH-fQ-Qtt"/>
+                                    <constraint firstAttribute="height" constant="27" id="5aK-kL-xAs"/>
+                                </constraints>
+                                <state key="normal" image="greenBtn"/>
+                                <connections>
+                                    <action selector="greenbtntapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xim-tT-1hA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5n-hp-try">
+                                <rect key="frame" x="0.0" y="315" width="375" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="VRh-sw-vES"/>
+                                    <constraint firstAttribute="height" constant="56" id="fHA-25-9jP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CP-su-JMR">
+                                <rect key="frame" x="137" y="85" width="101" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="br9-bg-LmK"/>
+                                    <constraint firstAttribute="width" constant="101" id="sQS-tV-0Qb"/>
+                                </constraints>
+                                <state key="normal" image="BlueBtn"/>
+                                <connections>
+                                    <action selector="bluebtntapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gye-BP-1VF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="20R-1d-7ex" secondAttribute="trailing" constant="123" id="AKC-q6-ziu"/>
+                            <constraint firstItem="D5n-hp-try" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cb7-Ti-Is3"/>
+                            <constraint firstItem="8CP-su-JMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="121" id="F68-PW-Hri"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="20R-1d-7ex" secondAttribute="bottom" constant="84" id="K5O-OO-fM8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8CP-su-JMR" secondAttribute="trailing" constant="121" id="QEl-OM-s6s"/>
+                            <constraint firstItem="D5n-hp-try" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hdY-ra-g3X"/>
+                            <constraint firstItem="8CP-su-JMR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="tTo-7g-06d"/>
+                            <constraint firstItem="20R-1d-7ex" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="u0p-oQ-6Et"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorview" destination="D5n-hp-try" id="DEg-Gc-a5T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="-89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueBtn" width="239" height="83"/>
+        <image name="bg" width="375" height="667"/>
+        <image name="greenBtn" width="239" height="83"/>
+    </resources>
+</document>
